@@ -26,17 +26,6 @@ $ligado = true; // Boolean True e false
 $grupos = array(1, 2, 3, 4, 5); // ARRAY
 
 
-$definirArray = array("Primeira string", "Segunda string")
-
-$definirArrayChaveValor = array(
-    "nome" => "Bonieky",
-    "sobrenome" => "lacerda",
-    "idade" => 90,
-    "sexo" => "masculino"
-);
-
-
-echo $definirArrayChaveValor["nome"];
 
 
 
