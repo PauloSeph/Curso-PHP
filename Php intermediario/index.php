@@ -1,18 +1,22 @@
 <?php
 
-$dsn = "mysql:dbname=blog;host=localhost";
+$dsn = "mysql:dbname=blogzon;host=localhost";
 $dbuser = "root";
 $dbpass = "";
 
 try {
     $pdo = new PDO($dsn, $dbuser, $dbpass);
     
-    echo "Conexão estabelicida com sucesso!";
+    $sql = "'SELECT * FROM usuarios";
+    $sql = $pdo->query($sql);
+
+
 
 } catch(PDOException $e) {
     echo "Falhou: ".$e->getMessage();
 
 }
+
 
 
 ?>
